@@ -19,8 +19,7 @@
   --card-blue: #dbeafe;
   --tile-1: #f4f5f3;
   --tile-2: #eef1ee;
-  --glow-1: #f1f5ff;
-  --glow-2: #f6f7fb;
+  --panel: #2563eb;
   --glass: rgba(255, 255, 255, 0.92);
   --glass-border: rgba(255, 255, 255, 0.5);
   --header-bg: rgba(255, 255, 255, 0.92);
@@ -31,7 +30,7 @@
   --lg-blue: rgba(219, 234, 254, 0.55);
   --lg-edge: rgba(255, 255, 255, 0.85);
   --lg-edge-low: rgba(255, 255, 255, 0.35);
-  --lg-sheen: rgba(255, 255, 255, 0.6);
+  --lg-sheen: rgba(255, 255, 255, 0.4);
   --lg-shadow: 0 12px 32px -12px rgba(15, 23, 42, 0.25), 0 2px 6px -2px rgba(15, 23, 42, 0.08);
   --radius: 20px;
   --shadow: 0 10px 30px -12px rgba(15, 23, 42, 0.15);
@@ -59,18 +58,17 @@
   --card-blue: #172a4a;
   --tile-1: #141d2f;
   --tile-2: #111a2b;
-  --glow-1: rgba(59, 130, 246, 0.12);
-  --glow-2: rgba(139, 92, 246, 0.08);
+  --panel: #1e40af;
   --glass: rgba(19, 28, 46, 0.92);
   --glass-border: rgba(255, 255, 255, 0.06);
   --header-bg: rgba(11, 17, 32, 0.88);
   --nav-bg: rgba(19, 28, 46, 0.85);
   --lg-tint: rgba(30, 41, 59, 0.4);
   --lg-tint-strong: rgba(30, 41, 59, 0.66);
-  --lg-blue: rgba(37, 99, 235, 0.2);
+  --lg-blue: rgba(59, 130, 246, 0.12);
   --lg-edge: rgba(255, 255, 255, 0.28);
   --lg-edge-low: rgba(255, 255, 255, 0.08);
-  --lg-sheen: rgba(255, 255, 255, 0.14);
+  --lg-sheen: rgba(255, 255, 255, 0.06);
   --lg-shadow: 0 12px 32px -12px rgba(0, 0, 0, 0.65), 0 2px 6px -2px rgba(0, 0, 0, 0.3);
   --shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.6);
   --shadow-lg: 0 25px 50px -20px rgba(0, 0, 0, 0.7);
@@ -122,7 +120,7 @@ section { padding: 96px 0; }
   transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
 }
 .btn:hover { transform: translateY(-2px); }
-.btn-primary { background: var(--accent); color: #fff; box-shadow: 0 10px 24px -8px rgba(59, 130, 246, 0.6); }
+.btn-primary { background: var(--accent); color: #fff; box-shadow: 0 4px 12px -6px rgba(15, 23, 42, 0.35); }
 .btn-primary:hover { background: var(--accent-dark); }
 .btn-outline { border: 1px solid var(--border); background: var(--surface); }
 .btn-outline:hover { border-color: var(--accent); color: var(--accent); }

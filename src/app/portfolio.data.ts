@@ -103,22 +103,6 @@ export const beyond = {
 
 export const projects: Project[] = [
   {
-    title: 'Ashiri',
-    category: 'web',
-    role: 'Full-Stack Developer',
-    description:
-      'An e-commerce store for an artisanal tank-top brand, with reviews, a community gallery and an admin dashboard.',
-    stats: [
-      { value: 'Admin', label: 'Dashboard' },
-      { value: 'Reviews', label: '& gallery' },
-      { value: 'Emails', label: 'Resend' },
-    ],
-    tech: ['React', 'Vite', 'Supabase', 'Recharts', 'Resend'],
-    image: 'projects/ashiri.webp',
-    liveUrl: 'https://ashiri.store/',
-    repoUrl: 'https://github.com/Mammoman/Ashiri',
-  },
-  {
     title: 'Zora Streams',
     category: 'web',
     role: 'Full-Stack Developer',
@@ -130,9 +114,25 @@ export const projects: Project[] = [
       { value: 'TMDB', label: 'Movie data' },
     ],
     tech: ['Next.js', 'React', 'TypeScript', 'Supabase', 'Tailwind CSS'],
-    image: 'projects/zora.webp',
+    image: 'projects/zora.jpg',
     liveUrl: 'https://zorastreams.vercel.app/auth/login',
     repoUrl: 'https://github.com/stilldaniel/Moviehub',
+  },
+  {
+    title: 'Triage System',
+    category: 'web',
+    role: 'Full-Stack Developer',
+    description:
+      'Upload a lead list and it cleans, deduplicates and scores every lead, then ranks who to contact first.',
+    stats: [
+      { value: '495', label: 'Leads ranked' },
+      { value: '5', label: 'Scoring signals' },
+      { value: 'CSV', label: 'In & out' },
+    ],
+    tech: ['Next.js', 'TypeScript', 'Papa Parse'],
+    image: 'projects/triage.webp',
+    liveUrl: 'https://triage-system-taupe.vercel.app/',
+    repoUrl: 'https://github.com/stilldaniel/Triage-system',
   },
   {
     title: 'HatsOFFWears',
@@ -150,20 +150,20 @@ export const projects: Project[] = [
     liveUrl: 'https://www.hatoffwears.com/',
   },
   {
-    title: 'Triage System',
+    title: 'Ashiri',
     category: 'web',
     role: 'Full-Stack Developer',
     description:
-      'Upload a lead list and it cleans, deduplicates and scores every lead, then ranks who to contact first.',
+      'An e-commerce store for an artisanal tank-top brand, with reviews, a community gallery and an admin dashboard.',
     stats: [
-      { value: '495', label: 'Leads ranked' },
-      { value: '5', label: 'Scoring signals' },
-      { value: 'CSV', label: 'In & out' },
+      { value: 'Admin', label: 'Dashboard' },
+      { value: 'Reviews', label: '& gallery' },
+      { value: 'Emails', label: 'Resend' },
     ],
-    tech: ['Next.js', 'TypeScript', 'Papa Parse'],
-    image: 'projects/triage.webp',
-    liveUrl: 'https://triage-system-taupe.vercel.app/',
-    repoUrl: 'https://github.com/stilldaniel/Triage-system',
+    tech: ['React', 'Vite', 'Supabase', 'Recharts', 'Resend'],
+    image: 'projects/ashiri.webp',
+    liveUrl: 'https://ashiri.store/',
+    repoUrl: 'https://github.com/Mammoman/Ashiri',
   },
   {
     title: 'Subscription Auditor',

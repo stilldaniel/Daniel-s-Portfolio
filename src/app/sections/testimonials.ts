@@ -38,7 +38,7 @@ import { RevealDirective } from '../reveal.directive';
     .quote-mark { position: absolute; top: 8px; right: 28px; font-size: 6rem; line-height: 1; color: var(--accent-soft); font-family: Georgia, serif; }
     blockquote { font-size: 1.1rem; line-height: 1.7; position: relative; }
     figcaption { display: flex; align-items: center; gap: 12px; margin-top: 28px; flex-wrap: wrap; }
-    .avatar { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff; font-weight: 700; }
+    .avatar { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--accent); color: #fff; font-weight: 700; }
     figcaption strong { display: block; }
     figcaption small { color: var(--muted); }
     figcaption .chip { margin-left: auto; font-size: 0.75rem; }

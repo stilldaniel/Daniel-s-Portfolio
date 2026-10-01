@@ -57,7 +57,7 @@ import { ConnectService } from '../connect.service';
     .timeline { list-style: none; max-width: 760px; margin: 0 auto; position: relative; padding-left: 36px; }
     .timeline::before {
       content: ''; position: absolute; left: 9px; top: 8px; bottom: 8px; width: 2px;
-      background: linear-gradient(var(--accent), var(--accent-2)); border-radius: 2px;
+      background: var(--accent); border-radius: 2px;
       /* The line draws downward once the timeline scrolls into view. */
       transform: scaleY(0); transform-origin: top; transition: transform 1.8s cubic-bezier(0.2, 0.7, 0.2, 1);
     }

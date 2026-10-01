@@ -75,8 +75,8 @@ import { GlassDirective } from '../glass.directive';
     }
     .tile:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
     .tile:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
-    .soft { background: linear-gradient(135deg, var(--tile-1), var(--tile-2)); }
-    .accent { background: linear-gradient(135deg, #8b5cf6, #7c3aed); color: #fff; }
+    .soft { background: var(--tile-1); }
+    .accent { background: #7c3aed; color: #fff; }
 
     h3 { font-size: 1.25rem; font-weight: 700; line-height: 1.4; }
     p { margin-top: 8px; font-size: 0.95rem; line-height: 1.6; color: var(--text-3); }
@@ -90,9 +90,21 @@ import { GlassDirective } from '../glass.directive';
 
     .foot { display: flex; align-items: center; justify-content: space-between; }
     .foot.end { justify-content: flex-end; }
-    .avatar { width: 40px; height: 40px; border-radius: 50%; overflow: hidden; border: 2px solid var(--surface); box-shadow: 0 4px 12px -4px rgba(15, 23, 42, 0.3); }
-    /* Zoom in on the face rather than showing the whole portrait. */
-    .avatar img { width: 100%; height: 100%; object-fit: cover; transform: scale(2.2); transform-origin: 54% 26%; }
+    .avatar {
+      position: relative; display: block; width: 48px; height: 48px; flex-shrink: 0;
+      border-radius: 50%; overflow: hidden; background: #000;
+      border: 2px solid var(--surface); box-shadow: 0 4px 12px -4px rgba(15, 23, 42, 0.3);
+    }
+    /*
+     * Crop me.jpg to the face. In the photo the head spans about 27% of the height, centred at
+     * 48.8% across and 15.9% down. Scaling the image to 210% and offsetting it by those amounts puts
+     * the head just below the middle of the circle at ~57% of its height, with room above the hair
+     * and below the chin; the photo's black backdrop fills the space around it.
+     */
+    .avatar img {
+      position: absolute; width: 210%; height: 210%; max-width: none;
+      left: calc(50% - 48.8% * 2.1); top: calc(52% - 15.9% * 2.1);
+    }
     .avatar.initial { display: grid; place-items: center; background: var(--accent); color: #fff; font-weight: 700; }
     .go {
       display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%;

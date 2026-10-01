@@ -39,9 +39,6 @@ import { clients, profile } from '../portfolio.data';
         </div>
 
         <div class="visual">
-          <!-- Soft colour orbs behind the cards give the glass something to refract. -->
-          <span class="orb orb-a" aria-hidden="true"></span>
-          <span class="orb orb-b" aria-hidden="true"></span>
           <div class="photo enter" style="--d: 250ms">
             @if (profile.photo) {
               <img [src]="profile.photo" [alt]="profile.fullName" />
@@ -113,9 +110,6 @@ import { clients, profile } from '../portfolio.data';
       overflow-x: clip;
       padding-top: 150px;
       padding-bottom: 0;
-      background:
-        radial-gradient(520px 420px at 8% 30%, var(--glow-1), transparent 70%),
-        radial-gradient(600px 500px at 95% 85%, var(--glow-2), transparent 70%);
     }
     .grid {
       display: grid;
@@ -199,7 +193,7 @@ import { clients, profile } from '../portfolio.data';
     .ring-text text { font-size: 8.5px; font-weight: 600; fill: var(--accent); }
     .ring-core {
       position: absolute; inset: 20px; border-radius: 50%; display: grid; place-items: center;
-      background: var(--accent); color: #fff; box-shadow: 0 6px 16px -4px rgba(59,130,246,0.6);
+      background: var(--accent); color: #fff;
     }
 
     /* Clients */
@@ -213,14 +207,6 @@ import { clients, profile } from '../portfolio.data';
     .logos span { padding: 0 32px; font-size: 1.125rem; font-weight: 700; color: var(--faint); letter-spacing: 0.02em; transition: color 0.2s; }
     .logos span:hover { color: var(--text); }
 
-    .orb {
-      position: absolute; z-index: 0; border-radius: 50%; pointer-events: none;
-      filter: blur(28px); opacity: 0.6; animation: drift 14s ease-in-out infinite alternate;
-    }
-    :host-context([data-theme='dark']) .orb { opacity: 0.4; }
-    .orb-a { width: 280px; height: 280px; right: -30px; top: 10px; background: radial-gradient(circle at 35% 35%, #60a5fa, #3b82f6 45%, transparent 70%); }
-    .orb-b { width: 240px; height: 240px; left: 28%; bottom: -20px; background: radial-gradient(circle at 60% 40%, #c4b5fd, #8b5cf6 45%, transparent 70%); animation-delay: -7s; }
-    @keyframes drift { to { transform: translate(-36px, 28px) scale(1.1); } }
     @keyframes scroll { to { transform: translateX(-100%); } }
     @keyframes spin { to { transform: rotate(360deg); } }
     @keyframes bob { 50% { transform: translateY(-8px); } }
@@ -278,7 +264,7 @@ import { clients, profile } from '../portfolio.data';
       .logos span { font-size: 1rem; }
     }
     @media (prefers-reduced-motion: reduce) {
-      .ring-text, .group, .orb, .hero .enter, .hero .projects-card.enter, .hero .metric-card.enter { animation: none; }
+      .ring-text, .group, .hero .enter, .hero .projects-card.enter, .hero .metric-card.enter { animation: none; }
     }
   `,
 })

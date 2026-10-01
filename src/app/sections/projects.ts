@@ -98,14 +98,12 @@ type Filter = 'all' | Project['category'];
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 460px), 1fr)); gap: 28px; }
     .project { overflow: hidden; display: flex; flex-direction: column; transition: transform 0.3s, box-shadow 0.3s; }
     .project:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
-    /* Screenshot shown inside a browser-window frame that sits on the gradient and runs off the bottom edge. */
+    /* Screenshot shown inside a browser-window frame that sits on a flat panel and runs off the bottom edge. */
     .cover {
       padding: 32px 32px 0;
-      background:
-        radial-gradient(300px 160px at 85% 0%, rgba(255,255,255,0.25), transparent 70%),
-        linear-gradient(135deg, var(--accent), #6366f1);
+      background: var(--surface-2);
     }
-    .cover.mobile { background: linear-gradient(135deg, var(--accent-2), #ec4899); }
+    .cover.mobile { background: var(--surface-2); }
     /* Glass chip that slides up over the screenshot on hover. */
     .browser { position: relative; }
     .peek {

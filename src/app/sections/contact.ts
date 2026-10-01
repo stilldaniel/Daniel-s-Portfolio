@@ -44,9 +44,7 @@ import { GlassDirective } from '../glass.directive';
   styles: `
     .panel {
       text-align: center; padding: 72px 32px; border-radius: 32px; color: #fff;
-      background:
-        radial-gradient(400px 200px at 90% 0%, rgba(255,255,255,0.18), transparent 70%),
-        linear-gradient(135deg, var(--accent), var(--accent-2));
+      background: var(--panel);
       box-shadow: var(--shadow-lg);
     }
     .eyebrow { color: rgba(255,255,255,0.8); }

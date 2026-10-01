@@ -69,7 +69,7 @@ import { profile, testimonials } from '../portfolio.data';
     .brand small { color: var(--muted); font-size: 0.75rem; }
     .logo {
       width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff; font-weight: 700;
+      background: var(--accent); color: #fff; font-weight: 700;
     }
     nav { display: flex; gap: 2px; }
     nav a { padding: 8px 16px; border-radius: 999px; font-size: 0.875rem; color: var(--text-2); transition: color 0.2s, background 0.2s; }
