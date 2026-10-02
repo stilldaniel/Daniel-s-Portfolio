@@ -1,4 +1,4 @@
-# Daniel Ogundipe — Portfolio
+# Ogundipe Daniel — Portfolio
 
 Personal portfolio built with Angular 21 (standalone components + signals). No UI library; all styling is plain CSS.
 

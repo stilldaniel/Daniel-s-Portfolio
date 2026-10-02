@@ -15,7 +15,15 @@ import { profile, testimonials } from '../portfolio.data';
              (like the phone menu) from blurring the page behind it. -->
         <span class="bar-glass" appGlass aria-hidden="true"></span>
         <a href="#about" class="brand" (click)="menuOpen.set(false)">
-          <span class="logo">{{ profile.initial }}</span>
+          <!-- Same "<O/D>" monogram as public/favicon.svg. -->
+          <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#0b1120" />
+            <g fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="#3b82f6" d="M11 27 7.5 32 11 37M34.3 24 31 40M52.5 27 56 32 52.5 37" />
+              <circle stroke="#fff" cx="21.5" cy="32" r="6.2" />
+              <path stroke="#fff" d="M38 25.8H41.8A6.2 6.2 0 0 1 41.8 38.2H38Z" />
+            </g>
+          </svg>
           <span>
             <strong>{{ profile.name.toUpperCase() }}</strong>
             <small>{{ profile.shortRole }}</small>
@@ -65,12 +73,11 @@ import { profile, testimonials } from '../portfolio.data';
     header.scrolled .bar-glass { background: var(--lg-tint-strong); }
     .brand { margin-right: auto; }
     .brand { display: flex; align-items: center; gap: 10px; line-height: 1.2; }
-    .brand strong { display: block; font-size: 0.95rem; }
+    .brand strong { display: block; font-size: 0.95rem; white-space: nowrap; }
     .brand small { color: var(--muted); font-size: 0.75rem; }
-    .logo {
-      width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center;
-      background: var(--accent); color: #fff; font-weight: 700;
-    }
+    .logo { display: block; width: 40px; height: 40px; flex-shrink: 0; border-radius: 10px; }
+    /* In dark mode the navy tile would melt into the navbar, so give it a hairline edge. */
+    :host-context([data-theme='dark']) .logo { box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12); }
     nav { display: flex; gap: 2px; }
     nav a { padding: 8px 16px; border-radius: 999px; font-size: 0.875rem; color: var(--text-2); transition: color 0.2s, background 0.2s; }
     nav a:hover { color: var(--accent); }
@@ -98,6 +105,7 @@ import { profile, testimonials } from '../portfolio.data';
 
     @media (max-width: 860px) {
       .bar { gap: 8px; padding: 6px 6px 6px 8px; border-radius: 24px; }
+      .brand strong { font-size: 0.85rem; letter-spacing: -0.01em; }
       .theme-toggle { margin-right: 0; width: 40px; height: 40px; }
       .desktop-cta { display: none; }
       .burger { display: flex; flex-direction: column; gap: 6px; padding: 10px; }

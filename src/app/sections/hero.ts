@@ -153,7 +153,7 @@ import { clients, profile } from '../portfolio.data';
     .badge-bottom > div { min-width: 0; }
     .badge-bottom strong { display: block; font-size: 0.875rem; font-weight: 600; line-height: 1.3; }
     .badge-bottom small { display: block; color: var(--muted); font-size: 0.75rem; }
-    .mini-logo { width: 40px; height: 40px; flex-shrink: 0; border-radius: 50%; background: var(--accent); color: #fff; display: grid; place-items: center; font-weight: 700; }
+    .mini-logo { width: 40px; height: 40px; flex-shrink: 0; border-radius: 50%; background: var(--accent); color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.02em; }
 
     .dashes { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
     .dashes path { fill: none; stroke: var(--faint); stroke-width: 1.5; stroke-dasharray: 4 6; opacity: 0.7; }

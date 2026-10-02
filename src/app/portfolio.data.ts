@@ -26,9 +26,9 @@ export interface Testimonial { quote: string; name: string; title: string; proje
 export interface Faq { category: string; question: string; answer: string; }
 
 export const profile = {
-  name: 'Daniel',
-  fullName: 'Daniel Ogundipe',
-  initial: 'D',
+  name: 'Ogundipe Daniel',
+  fullName: 'Ogundipe Daniel',
+  initial: 'OD',
   role: 'Full-Stack Developer',
   shortRole: 'Full-Stack',
   headline: { lead: 'Building', accent: 'Secure, Scalable', tail: 'Web Products.' },
@@ -36,7 +36,7 @@ export const profile = {
     'Full-stack developer with 5+ years of experience shipping fintech, blockchain and edtech products with React, Node.js and the cloud.',
   photo: 'me.jpg',
   cvUrl: 'cv.pdf',
-  cvFileName: 'Daniel-Ogundipe-Resume.pdf',
+  cvFileName: 'Ogundipe-Daniel-Resume.pdf',
   email: 'ogundipe.daniel@outlook.com',
   phone: '+234 913 258 8749',
   replyNote: 'I usually reply within 24 hours.',
