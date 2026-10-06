@@ -182,20 +182,20 @@ export const projects: Project[] = [
     repoUrl: 'https://github.com/Mammoman/subscription-auditor',
   },
   {
-    title: 'AlgeFox',
+    title: 'JobForge',
     category: 'web',
     role: 'Full-Stack Developer',
     description:
-      'A gamified maths app that teaches algebra and fractions through quizzes, XP, streaks and a leaderboard.',
+      'Scans six job boards every 15 minutes, scores each new job against your profile, and emails you the best matches.',
     stats: [
-      { value: 'XP', label: '& streaks' },
-      { value: 'Quizzes', label: 'Learning path' },
-      { value: 'Ranked', label: 'Leaderboard' },
+      { value: '6', label: 'Job boards' },
+      { value: '15 min', label: 'Scan cycle' },
+      { value: '160+', label: 'Tests' },
     ],
-    tech: ['Next.js', 'TypeScript', 'Supabase', 'Zustand', 'Framer Motion'],
-    image: 'projects/algefox.webp',
-    liveUrl: 'https://algefox.vercel.app/',
-    repoUrl: 'https://github.com/stilldaniel/algefox',
+    tech: ['Next.js', 'TypeScript', 'FastAPI', 'Python', 'PostgreSQL', 'Resend'],
+    image: 'projects/jobforge.webp',
+    liveUrl: 'https://jobforgee.vercel.app/',
+    repoUrl: 'https://github.com/stilldaniel/Jobforge',
   },
 ];
 
